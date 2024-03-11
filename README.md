@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+# Login form (test task for Qencode)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Made using MUI for UI and api from Qencode.
+In order to get successful Log in you need to be registered in [Qencode application](https://cloud-qa.qencode.com/) deployed for QA 
+
+## Features
+
+- Made using MUI
+- Validation made using Formik and Yup
+- API integration made using axios
 
 ## Available Scripts
 
@@ -13,11 +20,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
