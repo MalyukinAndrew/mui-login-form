@@ -14,6 +14,8 @@ const ForgotPasswordForm = () => {
     message: '',
   });
   const navigate = useNavigate();
+  const currentUrl = window.location.href;
+  const redirectUrl = `${currentUrl.substring(0, currentUrl.lastIndexOf('/'))}/reset-password`;
 
   const initialValues = {
     email: '',
@@ -21,7 +23,7 @@ const ForgotPasswordForm = () => {
 
   const handleSubmit = async ({ email }) => {
     try {
-      const res = await AuthService.forgotPassword(email);
+      const res = await AuthService.forgotPassword(email, redirectUrl);
       setResponseStatus((prev) => {
         return { ...prev, success: true, message: res.data.detail };
       });

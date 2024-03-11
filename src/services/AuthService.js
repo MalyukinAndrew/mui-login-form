@@ -5,10 +5,10 @@ export default class AuthService {
     return api.post('/login', { email, password });
   }
 
-  static async forgotPassword(email) {
+  static async forgotPassword(email, redirect_url) {
     return api.post('/password-reset', {
       email,
-      redirect_url: 'http://localhost:3000/reset-password',
+      redirect_url,
     });
   }
 
